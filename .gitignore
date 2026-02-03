@@ -1,0 +1,23 @@
+# IDE settings
+.idea/
+.vscode/
+
+# Папки и файлы сборки (Build artifacts)
+build/
+bin/
+obj/
+# Если вы создали папку с названием "make", добавим и её:
+make/
+
+# Временные файлы CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CMakeUserPresets.json
+
+# Исполняемые файлы
+*.exe
+*.out
+*.app
+# Имя вашего скомпилированного файла (из прошлого лога ошибки)
+main
