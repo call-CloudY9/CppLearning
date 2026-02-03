@@ -1,12 +1,14 @@
 #include <iostream>
 
-using namespace std;
+using namespace std; // убираем std перед всеми объектами, относящимися к std.
+// :: - операция разрешения области видимости.
 
-int main(int agrc, char** argv)
+int main(int agrc, char** argv) // main - это точка входа в программу, поэтому мы также прописываем количество аргументов и строку строк для того, чтобы указывать файлы для программы.
 {
+    int value(0); // объявляем и присываиваем int число 0
+    string hello = "Hello, World"; // объявляем объект string и присваиваем нашу строку.
+    cout<<hello<<"\n"; // выводим в output с помощью cout и переходим на следующую строку \n
+    cout<<value<<"\n"; // выводим value
 
-    string hello = "Hello, World";
-    cout<<hello<<"\n";
-
-    return 0;
+    return 0; // завершение программы.
 }
