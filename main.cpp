@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 /*namespace MyValue { // собственное пространство имен
     int value(10);
@@ -50,7 +51,7 @@
 }
 */
 
-
+/*
 bool func2(int value1, int value2) {
     if (value1 % value2 == 0) {
         return true;
@@ -68,10 +69,12 @@ bool func1(int value) {
         return false;
     }
 }
+*/
 // 1. функция 1 проверят четное или нечетное число
 // 2. функция 2 проверят делится ли 1 число на 2 число
 // 3. вывести или создать таблицу кода с соответсвующии символами, либо для латиницы, либо для кириллицы
 
+/*
 int main()
 {
     int value1, value2;
@@ -128,5 +131,40 @@ int main()
     }
     return 0;
 }
+*/
 
+// Исползование констант
+// Литерал - необъявленная константа, которая испольуется для присвоения переменных, объявленных констант, для передачи практических параметров в функции
+// Типы литералов: 1.Целочисленные
+
+using namespace std;
+/*
+int main() {
+    const double PI = acos(-1.0);
+    cout<<sizeof(int)<<"\n";
+    cout<<sizeof(long int)<<"\n";
+    cout<<sizeof(double)<<"\n";
+    cout<<sizeof(long double)<<"\n";
+    cout<<"\n";
+    cout<<sizeof(PI);
+    return 0;
+}
+*/
+
+//  рекурсивная функция для подсчета факториала
+long long factorial(long long num) {
+    if (num == 1ll) {
+        return 1ll;
+    }
+    return num * factorial(num - 1ll);
+}
+
+int main()
+{
+    long long num(0);
+    std::cout<<"Введите число, для которого хотите вычислить факториал: ";
+    std::cin>>num;
+    std::cout<<factorial(num);
+    return 0;
+}
 
