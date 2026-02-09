@@ -153,6 +153,9 @@ int main() {
 
 //  рекурсивная функция для подсчета факториала
 long long factorial(long long num) {
+    if (num == 0) {
+        return 1ll;
+    }
     if (num == 1ll) {
         return 1ll;
     }
@@ -161,10 +164,9 @@ long long factorial(long long num) {
 
 int main()
 {
-    long long num(0);
-    std::cout<<"Введите число, для которого хотите вычислить факториал: ";
-    std::cin>>num;
-    std::cout<<factorial(num);
+    for (int i = 0; i < 11; i++) {
+        std::cout<<"Факториал числа "<<i<<" = "<<factorial(i)<<"\n";
+    }
     return 0;
 }
 
